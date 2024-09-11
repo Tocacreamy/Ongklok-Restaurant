@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Ongklok</title>
+    <link rel="stylesheet" href="style_v2.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/ONGKLOK.svg" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#Beranda">Beranda</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Tentang_kami">Tentang Kami</a></li>
+                <li><a href="#Kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Beranda Section -->
+        <section id="Beranda" class="beranda">
+            <div class="sideimage">
+                <img src="img/ramen.svg" alt="Ramen Image">
+            </div>
+            <div class="description">
+                <h1>Selamat Datang di Ongklok</h1>
+                <p>Rasakan kelezatan terbaik dari hidangan kami, yang dibuat dengan bahan-bahan pilihan dan cinta. Kami menyajikan menu spesial setiap hari, langsung dari dapur kami ke meja Anda!</p>
+                <a href="#Menu" class="cta-button">Lihat Menu Kami</a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="Menu" class="menu">
+            <h2>Menu Favorit Kami</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="img/Frame 4.svg" alt="Ramen">
+                    <h3>Ramen Spesial</h3>
+                    <p>Ramen klasik dengan kaldu gurih dan topping pilihan.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Frame 5.svg" alt="Sushi">
+                    <h3>Sushi Premium</h3>
+                    <p>Sushi roll dengan ikan segar dan bumbu khas Jepang.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Frame 3.svg" alt="Gyoza">
+                    <h3>Gyoza Goreng</h3>
+                    <p>Pangsit daging dengan kulit renyah dan saus spesial.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kami Section -->
+        <section id="Tentang_kami" class="tentang-kami">
+            <h2>Tentang Kami</h2>
+            <p>Restoran Ongklok berdiri sejak 2020, dengan tujuan menghadirkan masakan khas Jepang yang autentik dan penuh cita rasa. Kami menggunakan bahan-bahan segar dan teknik memasak tradisional untuk menciptakan hidangan terbaik bagi pelanggan kami.</p>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="Kontak" class="kontak">
+            <h2>Kontak Kami</h2>
+            <p>Ingin reservasi atau punya pertanyaan? Hubungi kami melalui form di bawah ini!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="cta-button">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Restoran Ongklok. Semua hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>
